@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Анкета</title>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <table>
+            <td><fieldset>
+                <legend class="earth-font">Личная информация</legend>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </fieldset></td>
+            <td><fieldset>
+                <legend class="earth-font">Предпочтения</legend>
+                <p class="white">Выберите ваш любимый цвет:</p>
+                <input type="radio" id="color_red" name="color" value="red">
+                <label for="color_red">Красный</label><br>
+                <input type="radio" id="color_blue" name="color" value="blue">
+                <label for="color_blue">Синий</label><br>
+                <input type="radio" id="color_green" name="color" value="green">
+                <label for="color_green">Зеленый</label>
+                <br><br>
+                <label for="newsletter">Подписаться на новости:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <br><br>
+                <label for="profile_picture">Загрузить фото профиля:</label>
+                <input class="white" type="file" id="profile_picture" name="profile_picture"><br><br>
+            </fieldset></td>
+        </table>
+        <br>
+        <div class="center">
+            <input class="button" type="submit" value="Отправить">
+            <input class="button" type="reset" value="Сбросить">
+        </div>
+    </form>
+</body>
+</html>

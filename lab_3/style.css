@@ -1,0 +1,62 @@
+fieldset {
+    width: min-content;
+    height: 250px;
+    margin: 10px;
+    background-color: #252525;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+.earth-font {
+    font-family: 'earth', sans-serif;
+}
+
+@font-face {
+    font-family: 'earth';
+    src: url('EARTHPHOTOTYPE.TTF') format('truetype');
+}
+
+legend {
+    color: #d213af;
+}
+
+label {
+    color: whitesmoke;
+}
+
+.white {
+    color: whitesmoke;
+}
+
+.button {
+    border-color: #d213af;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #d213af;
+    width: auto;
+    height: 30px;
+}
