@@ -1,2 +1,2 @@
 Позняк Елизавета Юрьевна гр.214302
-http://lizapoznyak.github.io
+http://lizapoznyak.github.io/strweb-pr
