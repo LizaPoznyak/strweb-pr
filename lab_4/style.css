@@ -1,0 +1,106 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+}
+
+a {
+  font-size: 20px;
+}
+
+/* Вибрация кнопки */
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+button {
+  animation: vibrate 0.1s infinite;
+}
+
+button:hover {
+  animation: none;
+  background-color: green;
+}
+
+/* Анимация ссылки */
+@keyframes underline {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: green;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover {
+  color: green;
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Анимация падения мячика */
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0) scaleY(1); }
+  9% { transform: translate(-50%, 300px) scaleY(0.7); }
+  18% { transform: translate(-50%, 150px) scaleY(1); }
+  27% { transform: translate(-50%, 300px) scaleY(0.85); }
+  36% { transform: translate(-50%, 225px) scaleY(1); }
+  45% { transform: translate(-50%, 300px) scaleY(0.90); }
+  54% { transform: translate(-50%, 263px) scaleY(1); }
+  63% { transform: translate(-50%, 300px) scaleY(0.95); }
+  72% { transform: translate(-50%, 282px) scaleY(1); }
+  81% { transform: translate(-50%, 300px) scaleY(0.98); }
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(195, 0, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s ease infinite;
+}
